@@ -40,28 +40,41 @@ const Logo = ({
   const path = url ? url : light ? logo_light || logo : logo;
 
   return (
-    <>
-      <Link href={"/"}>
-        {path ? (
-          <Image
-            width={customWidth || logo_width}
-            height={customHeight || logo_height}
-            src={path}
-            alt={title}
-            priority
-            style={{
-              height: customHeight || logo_height + "px",
-              width: customWidth || logo_width + "px",
-            }}
-            className={cn("", className)}
-          />
-        ) : logo_text ? (
-          logo_text
-        ) : (
-          title
-        )}
-      </Link>
-    </>
+    <Link href={"/"} className="group">
+      {path ? (
+        <Image
+          width={customWidth || logo_width}
+          height={customHeight || logo_height}
+          src={path}
+          alt={title}
+          priority
+          style={{
+            height: customHeight || logo_height + "px",
+            width: customWidth || logo_width + "px",
+          }}
+          className={cn("", className)}
+        />
+      ) : logo_text ? (
+        <div className="flex items-center gap-2">
+          {/* Code Icon/Bracket */}
+          <span className="text-3xl font-bold text-theme transition-transform group-hover:scale-110">
+            {"</>"}
+          </span>
+          
+          {/* Logo Text with Gradient */}
+          <span className={cn(
+            "text-2xl md:text-3xl font-black tracking-tight transition-all duration-300",
+            "bg-gradient-to-r from-theme via-theme to-primary bg-clip-text text-transparent",
+            "group-hover:from-primary group-hover:via-theme group-hover:to-theme",
+            className
+          )}>
+            {logo_text}
+          </span>
+        </div>
+      ) : (
+        <span className="text-2xl font-bold">{title}</span>
+      )}
+    </Link>
   );
 };
 

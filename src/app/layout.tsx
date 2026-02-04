@@ -1,6 +1,15 @@
 import "../styles/globals.css";
 import "@/styles/main.css";
 import Provider from "@/provider";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Code Dynasty - Digital Products & Developer Training",
+  description: "We build cutting-edge websites and mobile apps while empowering future developers through comprehensive training in software development, UI/UX design, and data analysis.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,

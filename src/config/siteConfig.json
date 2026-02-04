@@ -1,65 +1,61 @@
 {
   "metadata": {
-    "meta_author": "Wealcoder",
-    "meta_image": "",
-    "meta_description": "Arolax Landing Page"
+    "meta_author": "Code Dynasty",
+    "meta_image": "https://codedynasty.tech/assets/imgs/code-dynasty-og.png",
+    "meta_description": "Code Dynasty - Building Digital Products & Empowering Future Developers. We create websites, mobile apps, and teach software development, UI/UX design, and data analysis."
   },
   "site_info": {
-    "title": "Arolax",
-    "description": "Arolax is a full-service brand agency for purpose-driven companies. We build brands that look good, sound good,and do good.",
-    "info": "Arolax is a startup design agency based in Canada",
-    "base_url": "",
-    "logo": "/assets/imgs/logo/logo.png",
-    "logo_light": "/assets/imgs/logo/logo-light.png",
-    "logo_light_2": "/assets/imgs/logo/logo-light-2.png",
-    "logo_tm_light": "/assets/imgs/logo/logo-tm-light.png",
-    "logo_width": 125,
-    "logo_height": 34,
-    "logo_text": "Arolax"
+    "title": "Code Dynasty",
+    "description": "We build cutting-edge digital products and empower the next generation of developers. From web and mobile apps to comprehensive training in software development, UI/UX design, and data analysis.",
+    "info": "Code Dynasty is a product development and tech education company",
+    "base_url": "https://codedynasty.tech",
+    "logo": "",
+    "logo_light": "",
+    "logo_light_2": "",
+    "logo_tm_light": "",
+    "logo_width": 200,
+    "logo_height": 40,
+    "logo_text": "Code Dynasty"
   },
   "footer_info": {
     "address": {
-      "name": "6541, Brand tower, New York, USA",
-      "link": "https://maps.app.goo.gl/JNHvEqWiaBD6fZvUA",
-      "iframe_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280006535!2d-74.14448744699548!3d40.69763123333062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1705913587617!5m2!1sen!2sbd"
+      "name": "Nigeria & United Kingdom",
+      "link": "",
+      "iframe_src": ""
     },
-    "email": "info@example.com",
-    "mobile": "+(08) 365 301 710",
-    "open_date": "Sun - Mon",
-    "open_time": "8:30 am - 7:30 pm",
+    "email": "codedynasty001@gmail.com",
+    "mobile": "+234 903 643 4434",
+    "mobile_2": "+44 780 446 8345",
+    "open_date": "Mon - Fri",
+    "open_time": "9:00 am - 6:00 pm",
     "copyright": {
       "enable": true,
-      "label": "© 2024-25 ",
-      "label_2": "Alrights reserved by",
-      "company": "crowdyTheme Agency",
-      "link": "https://wealcoder.com/"
+      "label": "© 2025 ",
+      "label_2": "All rights reserved by",
+      "company": "Code Dynasty",
+      "link": "https://codedynasty.tech"
     },
-    "ctaText": "Let’s Talk with us"
+    "ctaText": "Let's Build Together"
   },
   "social": [
     {
       "name": "Fb",
-      "link": "https://www.facebook.com/",
+      "link": "https://www.facebook.com/codedynasty",
       "value": "750,000"
     },
     {
       "name": "Tw",
-      "link": "https://twitter.com/",
+      "link": "https://twitter.com/codedynasty",
       "value": "750,000"
     },
     {
       "name": "In",
-      "link": "https://www.instagram.com/",
-      "value": "750,000"
-    },
-    {
-      "name": "Db",
-      "link": "https://dribbble.com/",
+      "link": "https://www.instagram.com/codedynasty",
       "value": "750,000"
     },
     {
       "name": "Li",
-      "link": "https://www.behance.net/",
+      "link": "https://www.linkedin.com/company/codedynasty",
       "value": "750,000"
     }
   ]

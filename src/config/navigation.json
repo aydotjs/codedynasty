@@ -2,218 +2,54 @@
   "header": [
     {
       "id": 1,
-      "name": "Demos",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Branding Agency",
-          "path": "/branding"
-        },
-        {
-          "id": 2,
-          "name": "Web Agency",
-          "path": "/web"
-        },
-        {
-          "id": 3,
-          "name": "Seo Agency",
-          "path": "/seo"
-        },
-        {
-          "id": 4,
-          "name": "Design Agency",
-          "path": "/design"
-        },
-        {
-          "id": 5,
-          "name": "Video Agency",
-          "path": "/video"
-        },
-        {
-          "id": 6,
-          "name": "AI Agency",
-          "path": "/ai-agency"
-        },
-        {
-          "id": 7,
-          "name": "Marketing Agency",
-          "path": "/marketing"
-        }
-      ]
+      "name": "Home",
+      "path": "/"
     },
     {
       "id": 2,
       "name": "About",
-      "path": "/about"
+      "path": "#about"
     },
     {
       "id": 3,
-      "name": "Portfolio",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Portfolio Carousel",
-          "path": "/portfolio/carousel"
-        },
-        {
-          "id": 2,
-          "name": "Portfolio Material",
-          "path": "/portfolio/material"
-        },
-        {
-          "id": 3,
-          "name": "Portfolio Slicer",
-          "path": "/portfolio/slicer"
-        },
-        {
-          "id": 4,
-          "name": "Portfolio Spring",
-          "path": "/portfolio/spring"
-        }
-      ]
+      "name": "Services",
+      "path": "#services"
     },
     {
       "id": 4,
-      "name": "Pages",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Service Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Services",
-              "path": "/service"
-            },
-            {
-              "id": 2,
-              "name": "Service Details",
-              "path": "/service/interaction-design"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Project Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Project",
-              "path": "/work"
-            },
-            {
-              "id": 2,
-              "name": "Project Details",
-              "path": "/work/victoria_kinko"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Team Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Team",
-              "path": "/team"
-            },
-            {
-              "id": 2,
-              "name": "Team Details",
-              "path": "/team/kamal-abraham"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Career Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Career",
-              "path": "/career"
-            },
-            {
-              "id": 2,
-              "name": "Career Details",
-              "path": "/career/frontend-developer"
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Faq",
-          "path": "/faq"
-        },
-        {
-          "id": 6,
-          "name": "404 Page",
-          "path": "/404"
-        }
-      ]
+      "name": "FAQ",
+      "path": "#faq"
     },
     {
       "id": 5,
-      "name": "Blog",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Blog",
-          "path": "/blog"
-        },
-        {
-          "id": 2,
-          "name": "Blog Details",
-          "path": "/blog/building-quality"
-        }
-      ]
-    },
-    {
-      "id": 6,
       "name": "Contact",
-      "path": "/contact"
+      "path": "#contact"
     }
   ],
   "footer1": [
     {
       "id": 1,
-      "title": "Service",
+      "title": "Services",
       "children": [
         {
+          "name": "Web Development",
+          "path": "#services"
+        },
+        {
+          "name": "Mobile Apps",
+          "path": "#services"
+        },
+        {
           "name": "UI/UX Design",
-          "path": "/"
+          "path": "#services"
         },
         {
-          "name": "Web Design",
-          "path": "/"
+          "name": "Software Training",
+          "path": "#services"
         },
         {
-          "name": "Branding",
-          "path": "/"
-        },
-        {
-          "name": "Webflow",
-          "path": "/"
-        },
-        {
-          "name": "Development",
-          "path": "/"
+          "name": "Data Analysis",
+          "path": "#services"
         }
       ]
     },
@@ -226,124 +62,115 @@
           "path": "/"
         },
         {
-          "name": "Agency",
-          "path": "/"
+          "name": "About Us",
+          "path": "#about"
         },
         {
-          "name": "Achievement",
-          "path": "/"
-        },
-        {
-          "name": "Career",
-          "path": "/career"
+          "name": "FAQ",
+          "path": "#faq"
         },
         {
           "name": "Contact Us",
-          "path": "/contact"
+          "path": "#contact"
         }
       ]
     },
     {
       "id": 3,
-      "title": "New York",
+      "title": "Nigeria",
       "children": [
         {
           "isLocation": true,
-          "name": "1772 Street Charleston, New York",
-          "path": "https://maps.app.goo.gl/ebuSmBmMBFCDUSjE7"
+          "name": "Lagos, Nigeria",
+          "path": ""
         },
         {
-          "name": "+1287-360-633",
-          "path": "tel:+1287-360-633"
+          "name": "+234 903 643 4434",
+          "path": "tel:+2349036434434"
         },
         {
-          "name": "info@yourwebsite.com",
-          "path": "mailto:info@yourwebsite.com"
+          "name": "codedynasty001@gmail.com",
+          "path": "mailto:codedynasty001@gmail.com"
         }
       ]
     },
     {
       "id": 4,
-      "title": "London",
+      "title": "United Kingdom",
       "children": [
         {
           "isLocation": true,
-          "name": "96 Park Hall, West Dulwich",
-          "path": "https://maps.app.goo.gl/ebuSmBmMBFCDUSjE7"
+          "name": "United Kingdom",
+          "path": ""
         },
         {
-          "name": "+1287-360-633",
-          "path": "tel:+1287-360-633"
+          "name": "+44 780 446 8345",
+          "path": "tel:+447804468345"
         },
         {
-          "name": "info@yourwebsite.com",
-          "path": "mailto:info@yourwebsite.com"
+          "name": "codedynasty001@gmail.com",
+          "path": "mailto:codedynasty001@gmail.com"
         }
       ]
     }
   ],
   "footer2": {
     "title": "{Get started} <br> now",
-    "subtitle": "If you would like to work with us or just want to get in touch, we’d love to hear from you!",
+    "subtitle": "Ready to build something amazing or learn to code? Let's make it happen together!",
     "locationData": [
       {
         "id": 1,
-        "city": "London",
-        "address": "Baltia Squar, Mark Street,London"
+        "city": "Nigeria",
+        "address": "Lagos, Nigeria"
       },
       {
         "id": 2,
-        "city": "New York",
-        "address": "Nenuya Centre, Elia Street New York, USA"
+        "city": "United Kingdom",
+        "address": "United Kingdom"
       }
     ],
     "navData": [
       {
         "id": 1,
         "name": "About Us",
-        "path": "/about"
+        "path": "#about"
       },
       {
         "id": 2,
         "name": "Privacy Policy",
-        "path": "/"
+        "path": "/privacy"
       },
       {
         "id": 3,
-        "name": "Career",
-        "path": "/career"
-      },
-      {
-        "id": 4,
-        "name": "Sitemap",
-        "path": "/"
+        "name": "Terms & Conditions",
+        "path": "/terms"
       }
     ]
   },
   "footer3": [
     {
       "id": 1,
-      "title": "Service",
+      "title": "Services",
       "children": [
         {
+          "name": "Web Development",
+          "path": "#services"
+        },
+        {
+          "name": "Mobile Apps",
+          "path": "#services"
+        },
+        {
           "name": "UI/UX Design",
-          "path": "/"
+          "path": "#services"
         },
         {
-          "name": "Web Design",
-          "path": "/"
+          "name": "Software Training",
+          "path": "#services"
         },
         {
-          "name": "Branding",
-          "path": "/"
-        },
-        {
-          "name": "Webflow",
-          "path": "/"
-        },
-        {
-          "name": "Development",
-          "path": "/"
+          "name": "Data Analysis",
+          "path": "#services"
         }
       ]
     },
@@ -356,20 +183,12 @@
           "path": "/"
         },
         {
-          "name": "Agency",
-          "path": "/"
+          "name": "About",
+          "path": "#about"
         },
         {
-          "name": "Achievement",
-          "path": "/"
-        },
-        {
-          "name": "Career",
-          "path": "/career"
-        },
-        {
-          "name": "Contact Us",
-          "path": "/contact"
+          "name": "Contact",
+          "path": "#contact"
         }
       ]
     }
@@ -377,23 +196,18 @@
   "footer4": [
     {
       "id": 1,
-      "name": "Agency",
-      "path": "/"
+      "name": "About",
+      "path": "#about"
     },
     {
       "id": 2,
-      "name": "Career",
-      "path": "/career"
+      "name": "Privacy",
+      "path": "/privacy"
     },
     {
       "id": 3,
-      "name": "Privacy",
-      "path": "/"
-    },
-    {
-      "id": 4,
       "name": "Terms & condition",
-      "path": "/"
+      "path": "/terms"
     }
   ]
 }

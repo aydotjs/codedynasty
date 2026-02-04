@@ -38,8 +38,8 @@ const page = () => {
     <div>
       <BindBtnMoveEffect />
       <SeoData
-        title="Arolax Web Agency"
-        description="Arolax Web Agency Description"
+        title="Code Dynasty - Digital Products & Developer Training"
+        description="We build cutting-edge websites and mobile apps while empowering future developers through comprehensive training in software development, UI/UX design, and data analysis."
       />
       <WebHero />
       <ClientSlider
@@ -48,16 +48,16 @@ const page = () => {
       />
       <WebAbout data={{ ...about }} />
       <WebFeature {...feature} />
-      <WebSkill {...skill} />
-      <WebEnterPrise {...enterprise} />
-      <WebWork works={works} />
+      {/* <WebSkill {...skill} /> */}
+      {/* <WebEnterPrise {...enterprise} /> */}
+      {/* <WebWork works={works} /> */}
       <WebService {...service} services={services} />
-      <WebImage {...image} />
-      <WebTestimonial {...testimonial} />
-      <WebTeam teamMembers={teamMembers} {...team} />
+      {/* <WebImage {...image} /> */}
+      {/* <WebTestimonial {...testimonial} /> */}
+      {/* <WebTeam teamMembers={teamMembers} {...team} /> */}
       <WebFaq {...faqsData} />
       <WebContact contactBanner={contactBanner} />
-      <WebBlog blogs={blogs} {...blog} />
+      {/* <WebBlog blogs={blogs} {...blog} /> */}
     </div>
   );
 };
