@@ -3,27 +3,32 @@
     {
       "id": 1,
       "name": "Home",
-      "path": "/"
+      "path": "/",
+      "hasChildren": false
     },
     {
       "id": 2,
       "name": "About",
-      "path": "#about"
+      "path": "#about",
+      "hasChildren": false
     },
     {
       "id": 3,
       "name": "Services",
-      "path": "#services"
+      "path": "#services",
+      "hasChildren": false
     },
     {
       "id": 4,
       "name": "FAQ",
-      "path": "#faq"
+      "path": "#faq",
+      "hasChildren": false
     },
     {
       "id": 5,
       "name": "Contact",
-      "path": "#contact"
+      "path": "#contact",
+      "hasChildren": false
     }
   ],
   "footer1": [
