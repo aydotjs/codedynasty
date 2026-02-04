@@ -24,9 +24,17 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { SocialShare1 } from "../tools/Social";
 
+// Define proper TypeScript types
+type MenuItem = {
+  id: number;
+  name: string;
+  path: string;
+  hasChildren?: boolean;
+  children?: MenuItem[];
+};
 
 const SideNavModal = () => {
-  const SideMenuData = navigation.header;
+  const SideMenuData = navigation.header as MenuItem[];
   const { footer_info, social } = siteConfig;
 
   return (
@@ -59,7 +67,7 @@ const SideNavModal = () => {
                   <div className="offcanvas-3__meta top-0 relative mb-[60px] md:mb-[90px] lg:mb-[100px] xl:mb-[145px] opacity-100  uppercase text-text-fixed-2 ">
                     <ul>
                       <li className="mb-[19px]">
-                        <a
+                        
                           href={`tel:${footer_info?.mobile}`}
                           className="underline"
                         >
@@ -114,7 +122,7 @@ const SideNavModal = () => {
                               {menuItem.name}
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col pl-[20px]">
-                              {menuItem.children.map((submenu, k) =>
+                              {menuItem.children?.map((submenu) =>
                                 submenu.hasChildren ? (
                                   <Accordion
                                     type="single"
@@ -134,7 +142,7 @@ const SideNavModal = () => {
                                         {submenu.name}
                                       </AccordionTrigger>
                                       {submenu.children?.map(
-                                        (submenuChild, j) => (
+                                        (submenuChild) => (
                                           <AccordionContent
                                             className="flex flex-col"
                                             key={submenuChild.id}
