@@ -13,7 +13,7 @@ const Provider = ({
     <AppContextProvider>
       <ThemeProvider
         attribute="class"
-        defaultTheme="light"
+        defaultTheme="dark"  // Changed from "light" to "dark"
         enableSystem
         disableTransitionOnChange
       >
