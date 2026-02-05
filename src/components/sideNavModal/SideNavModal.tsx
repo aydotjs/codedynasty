@@ -67,7 +67,7 @@ const SideNavModal = () => {
                   <div className="offcanvas-3__meta top-0 relative mb-[60px] md:mb-[90px] lg:mb-[100px] xl:mb-[145px] opacity-100  uppercase text-text-fixed-2 ">
                     <ul>
                       <li className="mb-[19px]">
-                        
+                        <a
                           href={`tel:${footer_info?.mobile}`}
                           className="underline"
                         >
