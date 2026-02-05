@@ -25,7 +25,7 @@ const AboutBold = () => {
         meta_title={data?.meta?.meta_title}
         description={data?.meta?.meta_description}
       />
-      <AboutBoldHero data={data.hero} />
+      {/* <AboutBoldHero data={data.hero} /> */}
       <AboutBoldProcess process_list={data.process_list} />
       <ClientSlider
         clients={clients.brands}
