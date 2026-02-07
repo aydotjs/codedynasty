@@ -57,7 +57,7 @@ const WebHero = () => {
 
             <div className="flex flex-wrap gap-4 has_fade_anim" data-delay="0.5">
               <Link
-                href="#contact"
+                href="/contact"
                 className="group px-8 py-4 bg-theme text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-theme/50 transition-all inline-flex items-center gap-2 relative overflow-hidden"
               >
                 <span className="relative z-10">Start Your Project</span>
@@ -66,7 +66,7 @@ const WebHero = () => {
               </Link>
 
               <Link
-                href="#services"
+               href="/about"
                 className="px-8 py-4 border-2 border-theme/30 rounded-lg font-semibold hover:bg-theme hover:text-white hover:border-theme transition-all backdrop-blur-sm"
               >
                 Explore Services
