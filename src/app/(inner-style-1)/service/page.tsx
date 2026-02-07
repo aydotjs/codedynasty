@@ -33,8 +33,8 @@ const Services = () => {
         description={description2}
         services={services}
       />
-      <AboutBanner {...aboutBanner} />
-      <PricingArea {...pricingData.pricing} />
+      {/* <AboutBanner {...aboutBanner} /> */}
+      {/* <PricingArea {...pricingData.pricing} /> */}
       <ContactBanner {...contactBanner} />
       <ClientArea brands={brands.brands} />
     </main>

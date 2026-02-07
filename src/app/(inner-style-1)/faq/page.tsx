@@ -5,7 +5,7 @@ import SeoData from "@/components/tools/SeoData";
 import { getMainPage } from "@/lib/helper/contentConverter";
 
 const Faqs = () => {
-  const { data: faqsData } = getMainPage("/faqs/branding-faqs.mdx");
+  const { data: faqsData } = getMainPage("/faqs/web-faqs.mdx");
 
   const { action_btn, title, description, faqs, meta } = faqsData || {};
   return (

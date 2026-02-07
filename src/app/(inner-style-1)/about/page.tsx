@@ -1,53 +1,42 @@
-import AboutAward from "@/components/about/AboutAward";
-import AboutFaqs from "@/components/about/AboutFaqs";
-import AboutHero from "@/components/about/AboutHero";
-import AboutTestimonial from "@/components/about/AboutTestimonial";
-import AboutTeam from "@/components/team/AboutTeam";
-import TeamCounterArea from "@/components/team/TeamCounterArea";
-import PricingArea from "@/components/pricing/PricingArea";
-import ClientArea from "@/components/clients/ClientArea";
-import { getAllPages, getMainPage } from "@/lib/helper/contentConverter";
+import AboutBoldHero from "@/components/about/AboutBoldHero";
+import AboutBoldProcess from "@/components/about/AboutBoldProcess";
+import { getMainPage } from "@/lib/helper/contentConverter";
+import { getAllPages } from "@/lib/helper/contentConverter";
+import ClientSlider from "@/components/clients/ClientSlider";
+import AboutCounter from "@/components/about/AboutCounter";
+import AboutBoldAward from "@/components/about/AboutBoldAward";
+import AboutBoldTestimonial from "@/components/testimonial/AboutBoldTestimonial";
+import AboutBoldTeam from "@/components/team/AboutBoldTeam";
 import SeoData from "@/components/tools/SeoData";
-import ContactBanner from "@/components/banner/ContactBanner";
-import AboutBanner from "@/components/banner/AboutBanner";
 
-const About = () => {
-  const { data: about } = getMainPage("/about/branding-about.mdx");
-  const { data: aboutBanner } = getMainPage("/banner/about-banner.mdx");
-  const { data: testimonial } = getMainPage(
-    "/testimonial/about_testimonial.mdx"
+const AboutBold = () => {
+  const { data } = getMainPage("/about/web/index.mdx");
+  const { data: clients } = getMainPage("/brands/brands3.mdx");
+  const { data: testimonial_data } = getMainPage(
+    "/testimonial/about_bold_testimonial.mdx"
   );
-  const { data: aboutFaqs } = getMainPage("/faqs/about-faqs.mdx");
+  const { data: team } = getMainPage("/team/about_bold.mdx");
   const teamMembers = getAllPages("/team/main");
-  const { data: pricingData } = getMainPage("/pricings/main-pricing.mdx");
-  const { data: contactBanner } = getMainPage("/banner/contact-banner.mdx");
-  const { data: brands } = getMainPage("/brands/brands1.mdx");
-
-  const { title, hero, counter_area, award_area, team_area, meta } =
-    about || {};
 
   return (
     <main>
       <SeoData
-        title={title}
-        meta_title={meta?.meta_title}
-        description={meta?.meta_description}
+        title={data?.title}
+        meta_title={data?.meta?.meta_title}
+        description={data?.meta?.meta_description}
       />
-      <AboutHero {...hero} />
-      <TeamCounterArea {...counter_area} />
-      <AboutAward {...award_area} />
-      <AboutBanner {...aboutBanner} />
-      <AboutTestimonial
-        testimonials={testimonial.testimonials}
-        icons={testimonial.icon}
+      {/* <AboutBoldHero data={data.hero} /> */}
+      <AboutBoldProcess process_list={data.process_list} />
+      <ClientSlider
+        clients={clients.brands}
+        shapeImage="/assets/imgs/shape/img-s-83.png"
       />
-      <AboutFaqs {...aboutFaqs} />
-      <AboutTeam teamMembers={teamMembers} {...team_area} />
-      <PricingArea {...pricingData.pricing} />
-      <ContactBanner {...contactBanner} />
-      <ClientArea brands={brands.brands} />
+      <AboutCounter {...data.counter_area} />
+      <AboutBoldAward {...data.awards_area} />
+      <AboutBoldTestimonial testimonials={testimonial_data.testimonials} />
+      <AboutBoldTeam teamMembers={teamMembers} {...team} />
     </main>
   );
 };
 
-export default About;
+export default AboutBold;

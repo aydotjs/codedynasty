@@ -2,9 +2,6 @@
 draft: false
 id: 3
 title: "Branding, Design <br> & UI/UX"
-icon:
-  light: "/assets/imgs/icon/icon-s-39.png"
-  dark: "/assets/imgs/icon/icon-s-39-light.png"
 image: "/assets/imgs/gallery/img-s-114.jpg"
 description: "Complete branding solutions, UI/UX design services, and training programs to build beautiful digital experiences."
 contactTitle: "Ready to create something beautiful?"
@@ -43,51 +40,93 @@ meta:
   meta_description: "Professional branding and UI/UX design services, plus comprehensive design training programs."
 ---
 
-<div className=" grid gap-[15px] md:gap-[30px] grid-cols-2">
-  <img src="/assets/imgs/gallery/img-s-115.jpg"/>
-  <img src="/assets/imgs/gallery/img-s-116.jpg"/>
+<div className="grid gap-[15px] md:gap-[30px] grid-cols-1 md:grid-cols-2">
+  {/* Card 1 - Pink Rose */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-pink-600 via-rose-500 to-purple-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute top-4 right-4 w-24 h-24 bg-pink-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
+      <div className="absolute bottom-4 left-4 w-24 h-24 bg-purple-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
+      
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-pink-500/50"></div>
+        <h3 className="text-white font-bold text-lg">Brand Identity</h3>
+        <p className="text-white/70 text-sm mt-2">Logos • Colors • Typography</p>
+      </div>
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
+
+  {/* Card 2 - Indigo Purple */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute top-4 left-4 w-24 h-24 bg-indigo-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-4 right-4 w-24 h-24 bg-purple-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
+      
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-indigo-500/50"></div>
+        <h3 className="text-white font-bold text-lg">UI/UX Design</h3>
+        <p className="text-white/70 text-sm mt-2">Figma • Prototyping • Testing</p>
+      </div>
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
 </div>
 
 <div className="grid gap-y-[10px] gap-x-[60px] lg:grid-cols-[1fr,410px] py-[60px] lg:py-[120px] 2xl:py-[150px]">
   ### Our design process
   We create designs that are both beautiful and functional, putting users first.
+  
   <div className="mt-[38px] xl:mt-[48px] grid gap-y-[50px] gap-x-[30px] xl:gap-x-[65px] sm:grid-cols-2 lg:grid-cols-4 col-span-full">
-    <WebServiceProcess title="Research & <br> Discovery"
+    <WebServiceProcess 
+      title="Research & <br> Discovery"
       serial_no="01"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-48.png",
-        dark: "/assets/imgs/icon/icon-s-48-light.png"
-      }}
       feature_list={["Brand Analysis", "User Research", "Competitors"]}
     />
 
-    <WebServiceProcess title="Concept & <br> Strategy"
+    <WebServiceProcess 
+      title="Concept & <br> Strategy"
       serial_no="02"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-49.png",
-        dark: "/assets/imgs/icon/icon-s-49-light.png"
-      }}
       feature_list={["Mood Boards", "Sketches", "Design Direction"]}
     />
 
-    <WebServiceProcess title="Design & <br> Prototype"
+    <WebServiceProcess 
+      title="Design & <br> Prototype"
       serial_no="03"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-50.png",
-        dark: "/assets/imgs/icon/icon-s-50-light.png"
-        
-      }}
       feature_list={["Visual Design", "Prototyping", "User Testing"]}
     />
 
-    <WebServiceProcess title="Deliver & <br> Support"
+    <WebServiceProcess 
+      title="Deliver & <br> Support"
       serial_no="04"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-51.png",
-        dark: "/assets/imgs/icon/icon-s-51-light.png"
-        
-      }}
       feature_list={["Design Files", "Guidelines", "Training"]}
     />
   </div>
 </div>
+
+<style jsx>{`
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+`}</style>

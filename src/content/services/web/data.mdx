@@ -2,9 +2,6 @@
 draft: false
 id: 4
 title: "Data Analysis & <br> Research"
-icon:
-  light: "/assets/imgs/icon/icon-s-39.png"
-  dark: "/assets/imgs/icon/icon-s-39-light.png"
 image: "/assets/imgs/gallery/img-s-114.jpg"
 description: "Turn your data into insights. We provide data analysis services for research projects and business intelligence."
 contactTitle: "Ready to unlock your data?"
@@ -43,51 +40,93 @@ meta:
   meta_description: "Professional data analysis for research and business. Statistical analysis, visualization, and insights."
 ---
 
-<div className=" grid gap-[15px] md:gap-[30px] grid-cols-2">
-  <img src="/assets/imgs/gallery/img-s-115.jpg"/>
-  <img src="/assets/imgs/gallery/img-s-116.jpg"/>
+<div className="grid gap-[15px] md:gap-[30px] grid-cols-1 md:grid-cols-2">
+  {/* Card 1 - Emerald Green */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-green-600 via-emerald-500 to-teal-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute top-4 right-4 w-24 h-24 bg-green-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
+      <div className="absolute bottom-4 left-4 w-24 h-24 bg-teal-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
+      
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-green-500/50"></div>
+        <h3 className="text-white font-bold text-lg">Statistical Analysis</h3>
+        <p className="text-white/70 text-sm mt-2">Python • Pandas • NumPy</p>
+      </div>
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
+
+  {/* Card 2 - Ocean Teal */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-teal-600 via-cyan-500 to-blue-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute top-4 left-4 w-24 h-24 bg-teal-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-4 right-4 w-24 h-24 bg-cyan-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
+      
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-teal-500/50"></div>
+        <h3 className="text-white font-bold text-lg">Data Visualization</h3>
+        <p className="text-white/70 text-sm mt-2">Tableau • Power BI • Charts</p>
+      </div>
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
 </div>
 
 <div className="grid gap-y-[10px] gap-x-[60px] lg:grid-cols-[1fr,410px] py-[60px] lg:py-[120px] 2xl:py-[150px]">
   ### Our data analysis process
   From raw data to actionable insights - we make your data work for you.
+  
   <div className="mt-[38px] xl:mt-[48px] grid gap-y-[50px] gap-x-[30px] xl:gap-x-[65px] sm:grid-cols-2 lg:grid-cols-4 col-span-full">
-    <WebServiceProcess title="Data <br> Collection"
+    <WebServiceProcess 
+      title="Data <br> Collection"
       serial_no="01"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-48.png",
-        dark: "/assets/imgs/icon/icon-s-48-light.png"
-      }}
       feature_list={["Data Gathering", "Data Cleaning", "Preparation"]}
     />
 
-    <WebServiceProcess title="Analysis & <br> Processing"
+    <WebServiceProcess 
+      title="Analysis & <br> Processing"
       serial_no="02"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-49.png",
-        dark: "/assets/imgs/icon/icon-s-49-light.png"
-      }}
       feature_list={["Statistical Tests", "Pattern Finding", "Modeling"]}
     />
 
-    <WebServiceProcess title="Visualization"
+    <WebServiceProcess 
+      title="Visualization"
       serial_no="03"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-50.png",
-        dark: "/assets/imgs/icon/icon-s-50-light.png"
-        
-      }}
       feature_list={["Charts & Graphs", "Dashboards", "Interactive Reports"]}
     />
 
-    <WebServiceProcess title="Insights & <br> Reports"
+    <WebServiceProcess 
+      title="Insights & <br> Reports"
       serial_no="04"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-51.png",
-        dark: "/assets/imgs/icon/icon-s-51-light.png"
-        
-      }}
       feature_list={["Key Findings", "Recommendations", "Documentation"]}
     />
   </div>
 </div>
+
+<style jsx>{`
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+`}</style>

@@ -2,9 +2,6 @@
 draft: false
 id: 1
 title: "Software <br> Development"
-icon:
-  light: "/assets/imgs/icon/icon-s-39.png"
-  dark: "/assets/imgs/icon/icon-s-39-light.png"
 image: "/assets/imgs/gallery/img-s-114.jpg"
 description: "We build custom websites and mobile applications that solve real problems and drive business growth."
 contactTitle: "Ready to build your software?"
@@ -43,51 +40,99 @@ meta:
   meta_description: "Custom software development services. We build websites and mobile applications using React, Next.js, and React Native."
 ---
 
-<div className=" grid gap-[15px] md:gap-[30px] grid-cols-2">
-  <img src="/assets/imgs/gallery/img-s-115.jpg"/>
-  <img src="/assets/imgs/gallery/img-s-116.jpg"/>
+<div className="grid gap-[15px] md:gap-[30px] grid-cols-1 md:grid-cols-2">
+  {/* Card 1 - Purple Dream */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-purple-600 via-theme to-pink-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      {/* Floating background orbs */}
+      <div className="absolute top-4 right-4 w-20 h-20 bg-purple-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-2xl opacity-40 animate-blob"></div>
+      <div className="absolute bottom-4 left-4 w-20 h-20 bg-pink-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
+      
+      {/* Main content */}
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-purple-500/50"></div>
+        <h3 className="text-white font-bold text-lg">Modern Stack</h3>
+        <p className="text-white/70 text-sm mt-2">React • Next.js • TypeScript</p>
+      </div>
+      
+      {/* Shimmer effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
+
+  {/* Card 2 - Ocean Blue */}
+  <div className="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-600 p-1 group cursor-pointer hover:scale-[1.02] transition-transform duration-500">
+    <div className="w-full h-full bg-black/90 rounded-2xl p-8 flex flex-col justify-center items-center relative overflow-hidden">
+      {/* Floating background orbs */}
+      <div className="absolute top-4 left-4 w-20 h-20 bg-blue-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-2xl opacity-40 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-4 right-4 w-20 h-20 bg-cyan-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-2xl opacity-40 animate-blob"></div>
+      
+      {/* Main content */}
+      <div className="relative z-10 text-center">
+        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-4 animate-pulse shadow-2xl shadow-blue-500/50"></div>
+        <h3 className="text-white font-bold text-lg">Mobile First</h3>
+        <p className="text-white/70 text-sm mt-2">iOS • Android • React Native</p>
+      </div>
+      
+      {/* Shimmer effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    </div>
+  </div>
 </div>
 
 <div className="grid gap-y-[10px] gap-x-[60px] lg:grid-cols-[1fr,410px] py-[60px] lg:py-[120px] 2xl:py-[150px]">
   ### How we build software
   We follow a proven process to deliver quality software on time and within budget.
+  
   <div className="mt-[38px] xl:mt-[48px] grid gap-y-[50px] gap-x-[30px] xl:gap-x-[65px] sm:grid-cols-2 lg:grid-cols-4 col-span-full">
-    <WebServiceProcess title="Planning & <br> Design"
+    <WebServiceProcess 
+      title="Planning & <br> Design"
       serial_no="01"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-48.png",
-        dark: "/assets/imgs/icon/icon-s-48-light.png"
-      }}
       feature_list={["Requirements", "User Flow", "UI Design"]}
     />
 
-    <WebServiceProcess title="Development"
+    <WebServiceProcess 
+      title="Development"
       serial_no="02"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-49.png",
-        dark: "/assets/imgs/icon/icon-s-49-light.png"
-      }}
       feature_list={["Clean Code", "Best Practices", "Regular Updates"]}
     />
 
-    <WebServiceProcess title="Testing"
+    <WebServiceProcess 
+      title="Testing"
       serial_no="03"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-50.png",
-        dark: "/assets/imgs/icon/icon-s-50-light.png"
-        
-      }}
       feature_list={["Quality Checks", "Bug Fixing", "Performance"]}
     />
 
-    <WebServiceProcess title="Launch & <br> Support"
+    <WebServiceProcess 
+      title="Launch & <br> Support"
       serial_no="04"
-      icon={{
-        light: "/assets/imgs/icon/icon-s-51.png",
-        dark: "/assets/imgs/icon/icon-s-51-light.png"
-        
-      }}
       feature_list={["Deployment", "Training", "Maintenance"]}
     />
   </div>
 </div>
+
+<style jsx>{`
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+`}</style>
