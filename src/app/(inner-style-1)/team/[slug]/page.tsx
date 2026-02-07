@@ -13,7 +13,7 @@ type Props = {
 export const generateStaticParams = () => {
   const teams = getAllPages("/team/main");
   const paths = teams.map((program) => ({
-    title: program.slug,
+     slug: program.slug,
   }));
 
   return paths;
