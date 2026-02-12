@@ -29,74 +29,98 @@ const WebHero = () => {
 
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Content */}
+          {/* Left Column - Cohort Announcement */}
           <div className="relative z-10">
+            {/* Enrollment Badge */}
             <div className="has_fade_anim mb-6">
-              <span className="inline-block px-4 py-2 bg-theme/10 text-theme rounded-full text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-sm border border-theme/20">
-                Build • Learn • Grow
-              </span>
+              <div className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-green-500/20 to-emerald-600/20 backdrop-blur-sm border border-green-400/30 rounded-full">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-green-400 font-semibold text-sm">
+                  🔥 Enrollment Now Open
+                </span>
+              </div>
             </div>
 
             <h1 className="has_word_anim text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-              We Build{" "}
+              Next Cohort{" "}
               <span className="text-theme relative inline-block">
-                Digital Products
+                Starts Soon
                 <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                   <path d="M0 4C50 4 50 0 100 0C150 0 150 4 200 4" stroke="currentColor" strokeWidth="2" className="opacity-30"/>
                 </svg>
-              </span>{" "}
-              & Empower Developers
+              </span>
             </h1>
 
-            <p 
-              className="text-lg lg:text-xl leading-relaxed mb-8 max-w-xl has_fade_anim opacity-80" 
-              data-delay="0.3"
-            >
-              From cutting-edge websites and mobile apps to comprehensive training in software development, UI/UX design, and data analysis — we turn ideas into reality and beginners into professionals.
-            </p>
+            <div className="space-y-4 mb-8 has_fade_anim" data-delay="0.3">
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-theme/20 flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-theme text-sm">📅</span>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold">Starting March 9, 2026</p>
+                  <p className="text-sm opacity-70">6 months intensive program</p>
+                </div>
+              </div>
 
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-theme/20 flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-theme text-sm">💰</span>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold">Special Early Bird Discount</p>
+                  <p className="text-sm opacity-70">Limited time offer</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-theme/20 flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-theme text-sm">👥</span>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold">Only 20 Spots Available</p>
+                  <p className="text-sm opacity-70">Small class size for personalized attention</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-theme/20 flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-theme text-sm">⚡</span>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold">Fast Track Your Career</p>
+                  <p className="text-sm opacity-70">Learn React, Next.js, TypeScript & more</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 has_fade_anim" data-delay="0.5">
               <Link
                 href="/contact"
-                className="group px-8 py-4 bg-theme text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-theme/50 transition-all inline-flex items-center gap-2 relative overflow-hidden"
+                className="group px-10 py-5 bg-gradient-to-r from-theme to-purple-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-theme/50 transition-all inline-flex items-center gap-3 relative overflow-hidden"
               >
-                <span className="relative z-10">Start Your Project</span>
-                <span className="relative z-10 group-hover:translate-x-1 transition-transform">→</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-theme to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span className="relative z-10">Secure Your Spot Now</span>
+                <svg 
+                  className="relative z-10 w-6 h-6 group-hover:translate-x-1 transition-transform" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
 
               <Link
-               href="/about"
-                className="px-8 py-4 border-2 border-theme/30 rounded-lg font-semibold hover:bg-theme hover:text-white hover:border-theme transition-all backdrop-blur-sm"
+                href="/about"
+                className="px-10 py-5 border-2 border-theme/30 rounded-xl font-bold text-lg hover:bg-theme hover:text-white hover:border-theme transition-all backdrop-blur-sm"
               >
-                Explore Services
+                Learn More
               </Link>
             </div>
 
-            {/* Stats */}
-            <div className="mt-12 grid grid-cols-3 gap-6 has_fade_anim" data-delay="0.7">
-              <div className="relative">
-                <div className="absolute inset-0 bg-theme/5 rounded-lg -z-10"></div>
-                <div className="p-4">
-                  <h3 className="text-3xl lg:text-4xl font-bold text-theme">50+</h3>
-                  <p className="text-sm mt-1 opacity-70">Projects Delivered</p>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-theme/5 rounded-lg -z-10"></div>
-                <div className="p-4">
-                  <h3 className="text-3xl lg:text-4xl font-bold text-theme">100+</h3>
-                  <p className="text-sm mt-1 opacity-70">Students Trained</p>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-theme/5 rounded-lg -z-10"></div>
-                <div className="p-4">
-                  <h3 className="text-3xl lg:text-4xl font-bold text-theme">5+</h3>
-                  <p className="text-sm mt-1 opacity-70">Years Experience</p>
-                </div>
-              </div>
-            </div>
+            {/* Urgency Badge */}
+            
           </div>
 
           {/* Right Column - Visual Element */}
@@ -139,7 +163,7 @@ class Developer {
 
                 {/* Tech Stack Icons */}
                 <div className="relative z-10">
-                  <h3 className="text-white font-bold text-2xl mb-4">Our Tech Stack</h3>
+                  <h3 className="text-white font-bold text-2xl mb-4">What You'll Learn</h3>
                   <div className="flex flex-wrap gap-3">
                     {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Tailwind'].map((tech, i) => (
                       <span 
@@ -161,7 +185,7 @@ class Developer {
                       <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" style={{ animationDelay: '0.2s' }}></div>
                       <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" style={{ animationDelay: '0.4s' }}></div>
                     </div>
-                    <span className="text-sm font-mono">Building something great...</span>
+                    <span className="text-sm font-mono">Your journey starts here...</span>
                   </div>
                 </div>
 
@@ -171,22 +195,23 @@ class Developer {
               </div>
             </div>
 
-            {/* Floating Quality Card */}
+            {/* Floating Cohort Info Card */}
             <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-900 p-5 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 backdrop-blur-sm">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-theme to-purple-600 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg">
-                  ✓
+                <div className="w-12 h-12 bg-gradient-to-br from-theme to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                  20
                 </div>
                 <div>
-                  <p className="font-semibold text-lg">Quality Assured</p>
+                  <p className="font-semibold text-sm text-gray-500 dark:text-gray-400">Max Class Size</p>
+                  <p className="font-bold text-base">Small & Focused</p>
                 </div>
               </div>
             </div>
 
-            {/* Floating Tech Badge */}
-            <div className="absolute -top-4 -right-4 bg-white dark:bg-gray-900 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-800 backdrop-blur-sm">
-              <p className="text-sm font-semibold">
-                <span className="text-theme">100%</span> Client Satisfaction
+            {/* Floating Discount Badge */}
+            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-theme to-purple-600 px-5 py-3 rounded-full shadow-lg backdrop-blur-sm animate-pulse">
+              <p className="text-sm font-bold text-white">
+                30% OFF Early Bird! 🎉
               </p>
             </div>
           </div>
