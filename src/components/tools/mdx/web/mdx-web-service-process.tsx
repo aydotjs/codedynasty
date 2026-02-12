@@ -10,7 +10,7 @@ type Props = {
     light: string;
   };
   serial_no: string;
-  feature_list: string[];
+  feature_list?: string[]; // Made optional
   className?: string;
 };
 
@@ -18,7 +18,7 @@ const WebServiceProcess = ({
   title,
   icon,
   serial_no,
-  feature_list,
+  feature_list = [], // Default to empty array
   className,
 }: Props) => {
   // Gradient configurations matching WebHero style
@@ -87,19 +87,21 @@ const WebServiceProcess = ({
         </div>
       </div>
 
-      <div className="mt-[30px]">
-        <ul>
-          {feature_list.map((item, i) => (
-            <li
-              key={i}
-              className="flex gap-[10px] text-[18px] first:mt-0 mt-[10px] opacity-70 group-hover:opacity-100 transition-all duration-300"
-              style={{ transitionDelay: `${i * 50}ms` }}
-            >
-              <span>+</span> {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+      {feature_list.length > 0 && (
+        <div className="mt-[30px]">
+          <ul>
+            {feature_list.map((item, i) => (
+              <li
+                key={i}
+                className="flex gap-[10px] text-[18px] first:mt-0 mt-[10px] opacity-70 group-hover:opacity-100 transition-all duration-300"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <span>+</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
